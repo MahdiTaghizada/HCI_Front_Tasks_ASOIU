@@ -12,7 +12,7 @@
             <div class="logo">Tormoz.az</div>
         </header>
 
-        <section class="banner">Başlıq – Premium elanlar, səliqəli dizayn</section>
+        <section class="banner">İstəyiniz maşın istədiyiniz qiymətə</section>
 
         <main class="layout">
             <aside class="menu">
@@ -70,88 +70,5 @@
 
         <footer class="footer">Müəllif hüquqları © 2026 — Məhdi Tağızadə və Miryaqub Sariyev tərəfindən</footer>
     </div>
-
-    <!-- Music Button -->
-    <button id="musicBtn" onclick="toggleMusic()" title="Musiqi">🎵</button>
-    <iframe id="musicPlayer" src="https://www.youtube.com/embed/ThulukLSBP8?enablejsapi=1" allow="autoplay" style="display:none;"></iframe>
-
-    <style>
-        #musicBtn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border: none;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            font-size: 24px;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            transition: transform 0.3s, box-shadow 0.3s;
-            z-index: 9999;
-        }
-        #musicBtn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-        }
-        #musicBtn.playing {
-            animation: pulse 1s infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-        }
-    </style>
-
-    <script>
-        let isPlaying = false;
-        let player;
-
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('musicPlayer', {
-                events: {
-                    'onReady': onPlayerReady
-                }
-            });
-        }
-
-        function onPlayerReady(event) {
-            // Player hazırdır
-        }
-
-        function toggleMusic() {
-            const btn = document.getElementById('musicBtn');
-            if (!player || !player.playVideo) {
-                // YouTube API hələ yüklənməyib, iframe-i yenidən yarat
-                const iframe = document.getElementById('musicPlayer');
-                if (!isPlaying) {
-                    iframe.src = "https://www.youtube.com/embed/ThulukLSBP8?autoplay=1&enablejsapi=1";
-                    btn.classList.add('playing');
-                    btn.textContent = '⏸️';
-                    isPlaying = true;
-                } else {
-                    iframe.src = "https://www.youtube.com/embed/ThulukLSBP8?enablejsapi=1";
-                    btn.classList.remove('playing');
-                    btn.textContent = '🎵';
-                    isPlaying = false;
-                }
-            } else {
-                if (isPlaying) {
-                    player.pauseVideo();
-                    btn.classList.remove('playing');
-                    btn.textContent = '🎵';
-                    isPlaying = false;
-                } else {
-                    player.playVideo();
-                    btn.classList.add('playing');
-                    btn.textContent = '⏸️';
-                    isPlaying = true;
-                }
-            }
-        }
-    </script>
-    <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 </html>
