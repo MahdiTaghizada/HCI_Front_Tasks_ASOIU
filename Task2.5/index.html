@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tormoz.az üslubunda titul səhifə - İşləyən Filtr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="top">
+            <div class="logo">Tormoz.az</div>
+        </header>
+
+        <section class="banner">İstəyiniz maşın istədiyiniz qiymətə</section>
+
+        <main class="layout">
+            <aside class="menu">
+                <h2>Menyu</h2>
+                <ul>
+                    <li><a href="#sedan">Sedan</a></li>
+                    <li><a href="#suv">SUV</a></li>
+                    <li><a href="#kupe">Kupe</a></li>
+                    <li><a href="#elektrik">Elektrik</a></li>
+                    <li><a href="#klassik">Klassiklər</a></li>
+                    <li><a href="#aksiyalar">Aksiyalar</a></li>
+                </ul>
+            </aside>
+
+            <section class="content">
+                <h2>Əsas mətn sahəsi</h2>
+                <p>Real elan görünüşünə uyğun 24 fərqli avtomobil kartı.</p>
+                <p class="results-count">Nəticə: <span id="count">24</span> elan tapıldı</p>
+                <div class="cards">
+                    <article class="card" data-marka="mercedes" data-model="C200" data-qiymet="48500" data-motor="1.5" data-il="2022" data-yurus="15000" data-seher="baki">
+                        <figure class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaWUNS5nBMVAPhqm03uqfP4IYk8AVCYZimdw&s" alt="Mercedes C200" loading="lazy"></figure>
+                        <h3>Mercedes C200</h3>
+                        <span class="price">48 500 AZN</span>
+                        <p>2022 • 1.5L • 15 000 km</p>
+                        <div class="info"><span>Bakı</span><span>Bugün</span></div>
+                    </article>
+                    <article class="card" data-marka="hyundai" data-model="Tucson" data-qiymet="39900" data-motor="2.0" data-il="2021" data-yurus="24000" data-seher="baki">
+                        <figure class="thumb"><img src="https://turlar.az/uploads/news/171221553167153660e55eba0d13.jpeg" alt="Hyundai Tucson" loading="lazy"></figure>
+                        <h3>Hyundai Tucson</h3>
+                        <span class="price">39 900 AZN</span>
+                        <p>2021 • 2.0L • 24 000 km</p>
+                        <div class="info"><span>Bakı</span><span>Dünən</span></div>
+                    </article>
+                    <article class="card" data-marka="tesla" data-model="Model 3" data-qiymet="62000" data-motor="elektrik" data-il="2024" data-yurus="0" data-seher="baki">
+                        <figure class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwO_dgs760vP2hDVV7bwRa7U69_64JqhgReQ&s" alt="Tesla Model 3" loading="lazy"></figure>
+                        <h3>Tesla Model 3</h3>
+                        <span class="price">62 000 AZN</span>
+                        <p>2024 • Elektrik • 0 km</p>
+                        <div class="info"><span>Bakı</span><span>Bugün</span></div>
+                    </article>
+                    <article class="card" data-marka="bmw" data-model="M4 Competition" data-qiymet="97500" data-motor="3.0" data-il="2023" data-yurus="8000" data-seher="baki">
+                        <figure class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-R7ql5Q6KXdt4QJ39c_qI2ZTOCiwUtG1dnA&s" alt="BMW M4 Competition" loading="lazy"></figure>
+                        <h3>BMW M4 Competition</h3>
+                        <span class="price">97 500 AZN</span>
+                        <p>2023 • 3.0L • 8 000 km</p>
+                        <div class="info"><span>Bakı</span><span>3 gün öncə</span></div>
+                    </article>
+                    <article class="card" data-marka="audi" data-model="Q7 S-Line" data-qiymet="118000" data-motor="3.0" data-il="2024" data-yurus="2500" data-seher="sumqayit">
+                        <figure class="thumb"><img src="https://masinlar.az/uploads/news/16385138116273661a9bc9379aab.jpg" alt="Audi Q7" loading="lazy"></figure>
+                        <h3>Audi Q7 S-Line</h3>
+                        <span class="price">118 000 AZN</span>
+                        <p>2024 • 3.0L • 2 500 km</p>
+                        <div class="info"><span>Sumqayıt</span><span>1 həftə öncə</span></div>
+                    </article>
+                    <article class="card" data-marka="lexus" data-model="RX 350h" data-qiymet="86000" data-motor="hibrid" data-il="2024" data-yurus="6000" data-seher="baki">
+                        <figure class="thumb"><img src="https://i.ytimg.com/vi/11OqcK1iWJc/maxresdefault.jpg" alt="Lexus RX" loading="lazy"></figure>
+                        <h3>Lexus RX 350h</h3>
+                        <span class="price">86 000 AZN</span>
+                        <p>2024 • Hibrid • 6 000 km</p>
+                        <div class="info"><span>Bakı</span><span>2 gün öncə</span></div>
+                    </article>
+                    <article class="card" data-marka="range rover" data-model="Vogue" data-qiymet="145000" data-motor="3.0" data-il="2022" data-yurus="28000" data-seher="baki">
+                        <figure class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcuDzNfqyok7XWRzZVASFpcTWwK5F_cuaR_w&s" alt="Range Rover Vogue" loading="lazy"></figure>
+                        <h3>Range Rover Vogue</h3>
+                        <span class="price">145 000 AZN</span>
+                        <p>2022 • 3.0L • 28 000 km</p>
+                        <div class="info"><span>Bakı</span><span>4 gün öncə</span></div>
+                    </article>
+                    <article class="card" data-marka="porsche" data-model="Cayenne" data-qiymet="129500" data-motor="3.0" data-il="2021" data-yurus="32000" data-seher="gence">
+                        <figure class="thumb"><img src="https://vehicle-images.dealerinspire.com/ac38-110010397/thumbnails/large/WP1AA2AY0TDA00030/32408670d1acd2b15d0e1e38a143e1fd.jpg" alt="Porsche Cayenne" loading="lazy"></figure>
+                        <h3>Porsche Cayenne</h3>
+                        <span class="price">129 500 AZN</span>
+                        <p>2021 • 3.0L • 32 000 km</p>
+                        <div class="info"><span>Gəncə</span><span>1 həftə öncə</span></div>
+                    </article>
+                    <article class="card" data-marka="toyota" data-model="Camry" data-qiymet="42300" data-motor="2.5" data-il="2020" data-yurus="41000" data-seher="baki">
+                        <figure class="thumb"><img src="https://turbo.azstatic.com/uploads/f460x343/2026%2F01%2F06%2F18%2F25%2F59%2Fe87a82e2-98dc-4a07-8fbd-b164dcb39398%2F22523_fYEQv_5QyotF8BbSTbg29Q.jpg" alt="Toyota Camry" loading="lazy"></figure>
+                        <h3>Toyota Camry</h3>
+                        <span class="price">42 300 AZN</span>
+                        <p>2020 • 2.5L • 41 000 km</p>
+                        <div class="info"><span>Bakı</span><span>Dünən</span></div>
+                    </article>
+                    <article class="card" data-marka="kia" data-model="Sportage" data-qiymet="36800" data-motor="2.0" data-il="2019" data-yurus="52000" data-seher="sumqayit">
+                        <figure class="thumb"><img src="https://aznur.az/wp-content/uploads/CarRentalGallery/Sportage.jpg" alt="Kia Sportage" loading="lazy"></figure>
+                        <h3>Kia Sportage</h3>
+                        <span class="price">36 800 AZN</span>
+                        <p>2019 • 2.0L • 52 000 km</p>
+                        <div class="info"><span>Sumqayıt</span><span>3 gün öncə</span></div>
+                    </article>
+                    <article class="card" data-marka="volvo" data-model="S90" data-qiymet="74600" data-motor="2.0" data-il="2022" data-yurus="19000" data-seher="baki">
+                        <figure class="thumb"><img src="https://www.volvocars.com/images/v/-/media/project/contentplatform/data/media/my24/car-images/s90-recharge-my24-702-exterior-702-light.jpg?h=600&iar=0" alt="Volvo S90" loading="lazy"></figure>
+                        <h3>Volvo S90</h3>
+                        <span class="price">74 600 AZN</span>
+                        <p>2022 • 2.0L • 19 000 km</p>
+                        <div class="info"><span>Bakı</span><span>Bugün</span></div>
+                    </article>
+                    <article class="card" data-marka="jaguar" data-model="F-Pace" data-qiymet="88200" data-motor="2.0" data-il="2021" data-yurus="27500" data-seher="baki">
+                        <figure class="thumb"><img src="https://media.cdn-jaguarlandrover.com/api/v2/images/92037/w/1000.jpg" alt="Jaguar F-Pace" loading="lazy"></figure>
+                        <h3>Jaguar F-Pace</h3>
+                        <span class="price">88 200 AZN</span>
+                        <p>2021 • 2.0L • 27 500 km</p>
+                        <div class="info"><span>Bakı</span><span>2 gün öncə</span></div>
+                    </article>
+                    <article class="card" data-marka="byd" data-model="Seal" data-qiymet="58900" data-motor="elektrik" data-il="2025" data-yurus="0" data-seher="baki">
+                        <figure class="thumb"><img src="https://bydmotorsbaku.az/storage/2025/06/BYD-Seal-07-DM-i-8.webp" alt="BYD Seal" loading="lazy"></figure>
+                        <h3>BYD Seal</h3>
+                        <span class="price">58 900 AZN</span>
+                        <p>2025 • Elektrik • 0 km</p>
+                        <div class="info"><span>Bakı</span><span>Bugün</span></div>
+                    </article>
+                    <article class="card" data-marka="ford" data-model="Focus" data-qiymet="24700" data-motor="1.6" data-il="2018" data-yurus="73000" data-seher="mingecevir">
+                        <figure class="thumb"><img src="https://www.ford.co.uk/content/dam/guxeu/rhd/central/cars/2021-focus/dse/column-cards/ford-focus-eu-Column_Card_Focus-ST-Line-X-3x2-1000x667-front-view.jpg" alt="Ford Focus" loading="lazy"></figure>
+                        <h3>Ford Focus</h3>
+                        <span class="price">24 700 AZN</span>
+                        <p>2018 • 1.6L • 73 000 km</p>
+                        <div class="info"><span>Mingəçevir</span><span>5 gün öncə</span></div>
+                    </article>
+                    <article class="card" data-marka="bentley" data-model="Bentayga" data-qiymet="265000" data-motor="4.0" data-il="2021" data-yurus="14000" data-seher="baki">
+                        <figure class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7ruYNd0ltb-nyU8Lv3dICGP-oOBMbj6Xisg&s" alt="Bentley Bentayga" loading="lazy"></figure>
+                        <h3>Bentley Bentayga</h3>
+                        <span class="price">265 000 AZN</span>
+                        <p>2021 • 4.0L • 14 000 km</p>
+                        <div class="info"><span>Bakı</span><span>1 gün öncə</span></div>
+                    </article>
+                    <article class="card" data-marka="chevrolet" data-model="Malibu" data-qiymet="33900" data-motor="1.5" data-il="2020" data-yurus="46000" data-seher="gence">
+                        <figure class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-q4Jiu0ebkPgaYippVO6NZRgsVqbBMcXRHQ&s" alt="Chevrolet Malibu" loading="lazy"></figure>
+                        <h3>Chevrolet Malibu</h3>
+                        <span class="price">33 900 AZN</span>
+                        <p>2020 • 1.5L • 46 000 km</p>
+                        <div class="info"><span>Gəncə</span><span>Dünən</span></div>
+                    </article>
+                    <article class="card" data-marka="honda" data-model="Civic" data-qiymet="31500" data-motor="1.8" data-il="2019" data-yurus="58000" data-seher="baki">
+                        <figure class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpZbLxxkfSiN8_i6JGI_9ijzooP2A6KDyZGA&s" alt="Honda Civic" loading="lazy"></figure>
+                        <h3>Honda Civic</h3>
+                        <span class="price">31 500 AZN</span>
+                        <p>2019 • 1.8L • 58 000 km</p>
+                        <div class="info"><span>Bakı</span><span>3 gün öncə</span></div>
+                    </article>
+                    <article class="card" data-marka="nissan" data-model="X-Trail" data-qiymet="37400" data-motor="2.5" data-il="2020" data-yurus="39000" data-seher="seki">
+                        <figure class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrHRXeWKeInF1bAh8T4uZVviCOvcvFEIAcAA&s" alt="Nissan X-Trail" loading="lazy"></figure>
+                        <h3>Nissan X-Trail</h3>
+                        <span class="price">37 400 AZN</span>
+                        <p>2020 • 2.5L • 39 000 km</p>
+                        <div class="info"><span>Şəki</span><span>4 gün öncə</span></div>
+                    </article>
+                    <article class="card" data-marka="skoda" data-model="Octavia" data-qiymet="45200" data-motor="1.4" data-il="2025" data-yurus="0" data-seher="baki">
+                        <figure class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPjrkq0Ug1VxivtF6bh4Yqaimq7o05NCIlAA&s" alt="Skoda Octavia" loading="lazy"></figure>
+                        <h3>Skoda Octavia</h3>
+                        <span class="price">45 200 AZN</span>
+                        <p>2025 • 1.4L • 0 km</p>
+                        <div class="info"><span>Bakı</span><span>Bugün</span></div>
+                    </article>
+                    <article class="card" data-marka="maserati" data-model="Ghibli" data-qiymet="112000" data-motor="3.0" data-il="2020" data-yurus="22000" data-seher="baki">
+                        <figure class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdGnFD-XVn5AAQAfw1AfBXgN8iinDaP6GiMQ&s" alt="Maserati Ghibli" loading="lazy"></figure>
+                        <h3>Maserati Ghibli</h3>
+                        <span class="price">112 000 AZN</span>
+                        <p>2020 • 3.0L • 22 000 km</p>
+                        <div class="info"><span>Bakı</span><span>2 gün öncə</span></div>
+                    </article>
+                    <article class="card" data-marka="subaru" data-model="Forester" data-qiymet="41800" data-motor="2.0" data-il="2021" data-yurus="34000" data-seher="quba">
+                        <figure class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbtjTy5jy1HRvl8-0YTjjJAGuvw2y-Hd5I5w&s" alt="Subaru Forester" loading="lazy"></figure>
+                        <h3>Subaru Forester</h3>
+                        <span class="price">41 800 AZN</span>
+                        <p>2021 • 2.0L • 34 000 km</p>
+                        <div class="info"><span>Quba</span><span>6 gün öncə</span></div>
+                    </article>
+                    <article class="card" data-marka="mazda" data-model="CX-5" data-qiymet="43600" data-motor="2.5" data-il="2022" data-yurus="18000" data-seher="baki">
+                        <figure class="thumb"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/2024_Mazda_CX-5_2.5_S_Select_in_Platinum_Quartz_Metallic%2C_front_right.jpg/1280px-2024_Mazda_CX-5_2.5_S_Select_in_Platinum_Quartz_Metallic%2C_front_right.jpg" alt="Mazda CX-5" loading="lazy"></figure>
+                        <h3>Mazda CX-5</h3>
+                        <span class="price">43 600 AZN</span>
+                        <p>2022 • 2.5L • 18 000 km</p>
+                        <div class="info"><span>Bakı</span><span>Dünən</span></div>
+                    </article>
+                    <article class="card" data-marka="toyota" data-model="Land Cruiser" data-qiymet="138500" data-motor="3.5" data-il="2023" data-yurus="11000" data-seher="baki">
+                        <figure class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAElhGrIGCad0dqZ8e4WZSHBtBAfZ3CYgvxQ&s" alt="Toyota Land Cruiser" loading="lazy"></figure>
+                        <h3>Toyota Land Cruiser</h3>
+                        <span class="price">138 500 AZN</span>
+                        <p>2023 • 3.5L • 11 000 km</p>
+                        <div class="info"><span>Bakı</span><span>1 gün öncə</span></div>
+                    </article>
+                    <article class="card" data-marka="peugeot" data-model="508" data-qiymet="34200" data-motor="1.6" data-il="2019" data-yurus="67000" data-seher="lenkeran">
+                        <figure class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1LgvIOLdSBDqJR6vo_0osPJ4R-ZntMuFO3Q&s" alt="Peugeot 508" loading="lazy"></figure>
+                        <h3>Peugeot 508</h3>
+                        <span class="price">34 200 AZN</span>
+                        <p>2019 • 1.6L • 67 000 km</p>
+                        <div class="info"><span>Lənkəran</span><span>1 həftə öncə</span></div>
+                    </article>
+                </div>
+            </section>
+
+            <aside class="filter-section">
+                <h2>Axtarış Filtri</h2>
+                <form class="filter-form" id="filterForm">
+                    <div class="filter-group">
+                        <label for="marka">Marka</label>
+                        <select id="marka" name="marka">
+                            <option value="">Hamısı</option>
+                            <option value="mercedes">Mercedes-Benz</option>
+                            <option value="bmw">BMW</option>
+                            <option value="audi">Audi</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="hyundai">Hyundai</option>
+                            <option value="lexus">Lexus</option>
+                            <option value="porsche">Porsche</option>
+                            <option value="tesla">Tesla</option>
+                            <option value="kia">Kia</option>
+                            <option value="honda">Honda</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="jaguar">Jaguar</option>
+                            <option value="byd">BYD</option>
+                            <option value="ford">Ford</option>
+                            <option value="bentley">Bentley</option>
+                            <option value="chevrolet">Chevrolet</option>
+                            <option value="nissan">Nissan</option>
+                            <option value="skoda">Skoda</option>
+                            <option value="maserati">Maserati</option>
+                            <option value="subaru">Subaru</option>
+                            <option value="mazda">Mazda</option>
+                            <option value="peugeot">Peugeot</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="model">Model</label>
+                        <input type="text" id="model" name="model" placeholder="Model daxil edin">
+                    </div>
+                    <div class="filter-group">
+                        <label for="qiymet-min">Qiymət (AZN)</label>
+                        <div class="price-range">
+                            <input type="number" id="qiymet-min" name="qiymet-min" placeholder="Min">
+                            <span>-</span>
+                            <input type="number" id="qiymet-max" name="qiymet-max" placeholder="Max">
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label for="motor">Motor həcmi</label>
+                        <select id="motor" name="motor">
+                            <option value="">Hamısı</option>
+                            <option value="1.0">1.0L və aşağı</option>
+                            <option value="1.5">1.5L</option>
+                            <option value="2.0">2.0L</option>
+                            <option value="2.5">2.5L</option>
+                            <option value="3.0">3.0L</option>
+                            <option value="3.5">3.5L və yuxarı</option>
+                            <option value="elektrik">Elektrik</option>
+                            <option value="hibrid">Hibrid</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="il">Buraxılış ili</label>
+                        <div class="year-range">
+                            <select id="il-min" name="il-min">
+                                <option value="">Min</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                            </select>
+                            <span>-</span>
+                            <select id="il-max" name="il-max">
+                                <option value="">Max</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label for="yurus">Yürüş (km)</label>
+                        <div class="km-range">
+                            <input type="number" id="yurus-min" name="yurus-min" placeholder="Min">
+                            <span>-</span>
+                            <input type="number" id="yurus-max" name="yurus-max" placeholder="Max">
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label for="seher">Şəhər</label>
+                        <select id="seher" name="seher">
+                            <option value="">Hamısı</option>
+                            <option value="baki">Bakı</option>
+                            <option value="sumqayit">Sumqayıt</option>
+                            <option value="gence">Gəncə</option>
+                            <option value="mingecevir">Mingəçevir</option>
+                            <option value="lenkeran">Lənkəran</option>
+                            <option value="seki">Şəki</option>
+                            <option value="quba">Quba</option>
+                        </select>
+                    </div>
+                    <div class="filter-buttons">
+                        <button type="submit" class="btn-apply">Tətbiq et</button>
+                        <button type="reset" class="btn-reset">Sıfırla</button>
+                    </div>
+                </form>
+            </aside>
+        </main>
+
+        <footer class="footer">Müəllif hüquqları © 2026 — Məhdi Tağızadə və Miryaqub Sariyev tərəfindən</footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
