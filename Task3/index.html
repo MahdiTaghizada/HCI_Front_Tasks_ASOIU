@@ -318,6 +318,89 @@
         </main>
 
         <footer class="footer">Müəllif hüquqları © 2026 — Məhdi Tağızadə və Miryaqub Sariyev tərəfindən</footer>
+
+        <!-- Kredit Kalkulyatoru Modal -->
+        <div id="creditModal" class="credit-modal">
+            <div class="credit-modal-content">
+                <div class="credit-modal-header">
+                    <h2>Kredit Kalkulyatoru</h2>
+                    <button type="button" class="credit-modal-close" id="closeModal">&times;</button>
+                </div>
+                <div class="credit-modal-body">
+                    <div class="car-info-display">
+                        <h3 id="carTitle"></h3>
+                        <p id="carPrice"></p>
+                    </div>
+                    
+                    <form id="creditCalculatorForm" class="credit-form">
+                        <div class="form-group">
+                            <label for="creditAmount">Kredit Məbləği (AZN)</label>
+                            <input type="number" id="creditAmount" placeholder="0" min="0" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="duration">Müddət (ay)</label>
+                            <input type="number" id="duration" placeholder="12" min="1" max="360" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interestRate">Faiz Dərəcəsi (% illik)</label>
+                            <input type="number" id="interestRate" placeholder="10" min="0" max="100" step="0.1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interestType">Faiz Tipi</label>
+                            <select id="interestType" required>
+                                <option value="">Seçin</option>
+                                <option value="simple">Sadə Faiz</option>
+                                <option value="compound">Mürəkkəb Faiz</option>
+                            </select>
+                        </div>
+
+                        <button type="button" id="calculateBtn" class="btn-calculate">Hesabla</button>
+                    </form>
+
+                    <div id="resultsSection" class="results-section" style="display: none;">
+                        <h3>Nəticələr</h3>
+                        <div class="results-grid">
+                            <div class="result-item">
+                                <label>Aylıq Ödəniş:</label>
+                                <value id="monthlyPayment">0 AZN</value>
+                            </div>
+                            <div class="result-item">
+                                <label>Cəmi Ödənəcək:</label>
+                                <value id="totalPayment">0 AZN</value>
+                            </div>
+                            <div class="result-item">
+                                <label>Cəmi Faiz:</label>
+                                <value id="totalInterest">0 AZN</value>
+                            </div>
+                            <div class="result-item">
+                                <label>Kredit Məbləği:</label>
+                                <value id="displayCreditAmount">0 AZN</value>
+                            </div>
+                        </div>
+
+                        <div class="payment-table-container">
+                            <h4>Ödəniş Cədvəli (Bütün Aylar)</h4>
+                            <table class="payment-table">
+                                <thead>
+                                    <tr>
+                                        <th>Ay</th>
+                                        <th>Ödəniş (AZN)</th>
+                                        <th>Faiz (AZN)</th>
+                                        <th>Əsas (AZN)</th>
+                                        <th>Qalan Borc (AZN)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="paymentTableBody">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
