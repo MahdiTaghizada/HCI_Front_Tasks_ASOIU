@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Brigada işi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Brigada işi</h2>
+
+<div class="container">
+
+<!-- BRIGADA 1 -->
+<div class="brigade b1">
+    <h3>Brigada №1</h3>
+
+    <table id="b1">
+        <tr>
+            <th></th>
+            <th>Bazar</th>
+            <th>Çərşənbə</th>
+            <th>Cümə</th>
+            <th>C. axşamı</th>
+            <th>Şənbə</th>
+        </tr>
+
+        <tr>
+            <td>P</td>
+            <td><input type="number" value="1"></td>
+            <td><input type="number" value="2"></td>
+            <td><input type="number" value="3"></td>
+            <td><input type="number" value="4"></td>
+            <td><input type="number" value="5"></td>
+        </tr>
+
+        <tr>
+            <td>B</td>
+            <td><input type="number" value="2"></td>
+            <td><input type="number" value="3"></td>
+            <td><input type="number" value="4"></td>
+            <td><input type="number" value="5"></td>
+            <td><input type="number" value="10"></td>
+        </tr>
+
+        <tr>
+            <td>H</td>
+            <td><input type="number" value="4"></td>
+            <td><input type="number" value="7"></td>
+            <td><input type="number" value="8"></td>
+            <td><input type="number" value="9"></td>
+            <td><input type="number" value="10"></td>
+        </tr>
+
+        <tr>
+            <td>İ</td>
+            <td><input type="number" value="1"></td>
+            <td><input type="number" value="6"></td>
+            <td><input type="number" value="9"></td>
+            <td><input type="number" value="10"></td>
+            <td><input type="number" value="10"></td>
+        </tr>
+    </table>
+
+    <button onclick="calcTotal('b1')">Brigada üzrə cəmi</button>
+    <button onclick="calcRow('b1')">Hər kəs üzrə</button>
+
+    <div id="res1" class="result"></div>
+</div>
+
+<!-- BRIGADA 2 -->
+<div class="brigade b2">
+    <h3>Brigada №2</h3>
+
+    <table id="b2">
+        <tr>
+            <th></th>
+            <th>Bazar</th>
+            <th>Çərşənbə</th>
+            <th>Cümə</th>
+            <th>C. axşamı</th>
+            <th>Şənbə</th>
+        </tr>
+
+        <tr>
+            <td>C</td>
+            <td><input type="number" value="1"></td>
+            <td><input type="number" value="2"></td>
+            <td><input type="number" value="3"></td>
+            <td><input type="number" value="4"></td>
+            <td><input type="number" value="5"></td>
+        </tr>
+
+        <tr>
+            <td>B</td>
+            <td><input type="number" value="2"></td>
+            <td><input type="number" value="3"></td>
+            <td><input type="number" value="6"></td>
+            <td><input type="number" value="9"></td>
+            <td><input type="number" value="10"></td>
+        </tr>
+
+        <tr>
+            <td>H</td>
+            <td><input type="number" value="4"></td>
+            <td><input type="number" value="7"></td>
+            <td><input type="number" value="8"></td>
+            <td><input type="number" value="9"></td>
+            <td><input type="number" value="10"></td>
+        </tr>
+
+        <tr>
+            <td>İ</td>
+            <td><input type="number" value="1"></td>
+            <td><input type="number" value="6"></td>
+            <td><input type="number" value="9"></td>
+            <td><input type="number" value="10"></td>
+            <td><input type="number" value="10"></td>
+        </tr>
+    </table>
+
+    <button onclick="calcTotal('b2')">Brigada üzrə cəmi</button>
+    <button onclick="calcRow('b2')">Hər kəs üzrə</button>
+
+    <div id="res2" class="result"></div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

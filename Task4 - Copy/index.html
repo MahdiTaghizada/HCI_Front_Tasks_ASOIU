@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tormoz.az üslubunda titul səhifə - İşləyən Filtr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="top">
+            <div class="logo">Tormoz.az</div>
+        </header>
+
+        <section class="banner">İstəyiniz maşın istədiyiniz qiymətə</section>
+
+        <main class="layout">
+            <aside class="menu">
+                <h2>Menyu</h2>
+                <ul>
+                    <li><a href="#sedan">Sedan</a></li>
+                    <li><a href="#suv">SUV</a></li>
+                    <li><a href="#kupe">Kupe</a></li>
+                    <li><a href="#elektrik">Elektrik</a></li>
+                    <li><a href="#klassik">Klassiklər</a></li>
+                    <li><a href="#aksiyalar">Aksiyalar</a></li>
+                </ul>
+            </aside>
+
+            <section class="content">
+                <h2>Əsas mətn sahəsi</h2>
+                <p>Real elan görünüşünə uyğun 24 fərqli avtomobil kartı.</p>
+                <p class="results-count">Nəticə: <span id="count">0</span> elan tapıldı</p>
+                <div class="cards" id="cardsContainer"></div>
+            </section>
+
+            <aside class="filter-section">
+                <h2>Axtarış Filtri</h2>
+                <form class="filter-form" id="filterForm">
+                    <div class="filter-group">
+                        <label for="marka">Marka</label>
+                        <select id="marka" name="marka">
+                            <option value="">Hamısı</option>
+                            <option value="mercedes">Mercedes-Benz</option>
+                            <option value="bmw">BMW</option>
+                            <option value="audi">Audi</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="hyundai">Hyundai</option>
+                            <option value="lexus">Lexus</option>
+                            <option value="porsche">Porsche</option>
+                            <option value="tesla">Tesla</option>
+                            <option value="kia">Kia</option>
+                            <option value="honda">Honda</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="jaguar">Jaguar</option>
+                            <option value="byd">BYD</option>
+                            <option value="ford">Ford</option>
+                            <option value="bentley">Bentley</option>
+                            <option value="chevrolet">Chevrolet</option>
+                            <option value="nissan">Nissan</option>
+                            <option value="skoda">Skoda</option>
+                            <option value="maserati">Maserati</option>
+                            <option value="subaru">Subaru</option>
+                            <option value="mazda">Mazda</option>
+                            <option value="peugeot">Peugeot</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="model">Model</label>
+                        <input type="text" id="model" name="model" placeholder="Model daxil edin">
+                    </div>
+                    <div class="filter-group">
+                        <label for="qiymet-min">Qiymət (AZN)</label>
+                        <div class="price-range">
+                            <input type="number" id="qiymet-min" name="qiymet-min" placeholder="Min">
+                            <span>-</span>
+                            <input type="number" id="qiymet-max" name="qiymet-max" placeholder="Max">
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label for="motor">Motor həcmi</label>
+                        <select id="motor" name="motor">
+                            <option value="">Hamısı</option>
+                            <option value="1.0">1.0L və aşağı</option>
+                            <option value="1.5">1.5L</option>
+                            <option value="2.0">2.0L</option>
+                            <option value="2.5">2.5L</option>
+                            <option value="3.0">3.0L</option>
+                            <option value="3.5">3.5L və yuxarı</option>
+                            <option value="elektrik">Elektrik</option>
+                            <option value="hibrid">Hibrid</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="il">Buraxılış ili</label>
+                        <div class="year-range">
+                            <select id="il-min" name="il-min">
+                                <option value="">Min</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                            </select>
+                            <span>-</span>
+                            <select id="il-max" name="il-max">
+                                <option value="">Max</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label for="yurus">Yürüş (km)</label>
+                        <div class="km-range">
+                            <input type="number" id="yurus-min" name="yurus-min" placeholder="Min">
+                            <span>-</span>
+                            <input type="number" id="yurus-max" name="yurus-max" placeholder="Max">
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label for="seher">Şəhər</label>
+                        <select id="seher" name="seher">
+                            <option value="">Hamısı</option>
+                            <option value="baki">Bakı</option>
+                            <option value="sumqayit">Sumqayıt</option>
+                            <option value="gence">Gəncə</option>
+                            <option value="mingecevir">Mingəçevir</option>
+                            <option value="lenkeran">Lənkəran</option>
+                            <option value="seki">Şəki</option>
+                            <option value="quba">Quba</option>
+                        </select>
+                    </div>
+                    <div class="filter-buttons">
+                        <button type="submit" class="btn-apply">Tətbiq et</button>
+                        <button type="reset" class="btn-reset">Sıfırla</button>
+                    </div>
+                </form>
+            </aside>
+        </main>
+
+        <footer class="footer">Müəllif hüquqları © 2026 — Məhdi Tağızadə və Miryaqub Sariyev tərəfindən</footer>
+
+        <!-- Kredit Kalkulyatoru Modal -->
+        <div id="creditModal" class="credit-modal">
+            <div class="credit-modal-content">
+                <div class="credit-modal-header">
+                    <h2>Kredit Kalkulyatoru</h2>
+                    <button type="button" class="credit-modal-close" id="closeModal">&times;</button>
+                </div>
+                <div class="credit-modal-body">
+                    <div class="car-info-display">
+                        <h3 id="carTitle"></h3>
+                        <p id="carPrice"></p>
+                    </div>
+                    
+                    <form id="creditCalculatorForm" class="credit-form">
+                        <div class="form-group">
+                            <label for="creditAmount">Kredit Məbləği (AZN)</label>
+                            <input type="number" id="creditAmount" placeholder="0" min="0" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="duration">Müddət (ay)</label>
+                            <input type="number" id="duration" placeholder="12" min="1" max="360" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interestRate">Faiz Dərəcəsi (% illik)</label>
+                            <input type="number" id="interestRate" placeholder="10" min="0" max="100" step="0.1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interestType">Faiz Tipi</label>
+                            <select id="interestType" required>
+                                <option value="">Seçin</option>
+                                <option value="simple">Sadə Faiz</option>
+                                <option value="compound">Mürəkkəb Faiz</option>
+                            </select>
+                        </div>
+
+                        <button type="button" id="calculateBtn" class="btn-calculate">Hesabla</button>
+                    </form>
+
+                    <div id="resultsSection" class="results-section" style="display: none;">
+                        <h3>Nəticələr</h3>
+                        <div class="results-grid">
+                            <div class="result-item">
+                                <label>Aylıq Ödəniş:</label>
+                                <value id="monthlyPayment">0 AZN</value>
+                            </div>
+                            <div class="result-item">
+                                <label>Cəmi Ödənəcək:</label>
+                                <value id="totalPayment">0 AZN</value>
+                            </div>
+                            <div class="result-item">
+                                <label>Cəmi Faiz:</label>
+                                <value id="totalInterest">0 AZN</value>
+                            </div>
+                            <div class="result-item">
+                                <label>Kredit Məbləği:</label>
+                                <value id="displayCreditAmount">0 AZN</value>
+                            </div>
+                        </div>
+
+                        <div class="payment-table-container">
+                            <h4>Ödəniş Cədvəli (Bütün Aylar)</h4>
+                            <table class="payment-table">
+                                <thead>
+                                    <tr>
+                                        <th>Ay</th>
+                                        <th>Ödəniş (AZN)</th>
+                                        <th>Faiz (AZN)</th>
+                                        <th>Əsas (AZN)</th>
+                                        <th>Qalan Borc (AZN)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="paymentTableBody">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

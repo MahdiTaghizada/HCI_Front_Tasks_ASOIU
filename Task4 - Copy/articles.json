@@ -1,0 +1,484 @@
+﻿{
+    "articles":  [
+                     {
+                         "marka":  "mercedes",
+                         "model":  "C200",
+                         "qiymet":  48500,
+                         "motor":  "1.5",
+                         "il":  2022,
+                         "yurus":  15000,
+                         "seher":  "baki",
+                         "image":  {
+                                       "src":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaWUNS5nBMVAPhqm03uqfP4IYk8AVCYZimdw\u0026s",
+                                       "alt":  "Mercedes C200"
+                                   },
+                         "title":  "Mercedes C200",
+                         "priceText":  "48 500 AZN",
+                         "details":  "2022 • 1.5L • 15 000 km",
+                         "posted":  {
+                                        "city":  "Bakı",
+                                        "time":  "Bugün"
+                                    }
+                     },
+                     {
+                         "marka":  "hyundai",
+                         "model":  "Tucson",
+                         "qiymet":  39900,
+                         "motor":  "2.0",
+                         "il":  2021,
+                         "yurus":  24000,
+                         "seher":  "baki",
+                         "image":  {
+                                       "src":  "https://turlar.az/uploads/news/171221553167153660e55eba0d13.jpeg",
+                                       "alt":  "Hyundai Tucson"
+                                   },
+                         "title":  "Hyundai Tucson",
+                         "priceText":  "39 900 AZN",
+                         "details":  "2021 • 2.0L • 24 000 km",
+                         "posted":  {
+                                        "city":  "Bakı",
+                                        "time":  "Dünən"
+                                    }
+                     },
+                     {
+                         "marka":  "tesla",
+                         "model":  "Model 3",
+                         "qiymet":  62000,
+                         "motor":  "elektrik",
+                         "il":  2024,
+                         "yurus":  0,
+                         "seher":  "baki",
+                         "image":  {
+                                       "src":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwO_dgs760vP2hDVV7bwRa7U69_64JqhgReQ\u0026s",
+                                       "alt":  "Tesla Model 3"
+                                   },
+                         "title":  "Tesla Model 3",
+                         "priceText":  "62 000 AZN",
+                         "details":  "2024 • Elektrik • 0 km",
+                         "posted":  {
+                                        "city":  "Bakı",
+                                        "time":  "Bugün"
+                                    }
+                     },
+                     {
+                         "marka":  "bmw",
+                         "model":  "M4 Competition",
+                         "qiymet":  97500,
+                         "motor":  "3.0",
+                         "il":  2023,
+                         "yurus":  8000,
+                         "seher":  "baki",
+                         "image":  {
+                                       "src":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-R7ql5Q6KXdt4QJ39c_qI2ZTOCiwUtG1dnA\u0026s",
+                                       "alt":  "BMW M4 Competition"
+                                   },
+                         "title":  "BMW M4 Competition",
+                         "priceText":  "97 500 AZN",
+                         "details":  "2023 • 3.0L • 8 000 km",
+                         "posted":  {
+                                        "city":  "Bakı",
+                                        "time":  "3 gün öncə"
+                                    }
+                     },
+                     {
+                         "marka":  "audi",
+                         "model":  "Q7 S-Line",
+                         "qiymet":  118000,
+                         "motor":  "3.0",
+                         "il":  2024,
+                         "yurus":  2500,
+                         "seher":  "sumqayit",
+                         "image":  {
+                                       "src":  "https://masinlar.az/uploads/news/16385138116273661a9bc9379aab.jpg",
+                                       "alt":  "Audi Q7"
+                                   },
+                         "title":  "Audi Q7 S-Line",
+                         "priceText":  "118 000 AZN",
+                         "details":  "2024 • 3.0L • 2 500 km",
+                         "posted":  {
+                                        "city":  "Sumqayıt",
+                                        "time":  "1 həftə öncə"
+                                    }
+                     },
+                     {
+                         "marka":  "lexus",
+                         "model":  "RX 350h",
+                         "qiymet":  86000,
+                         "motor":  "hibrid",
+                         "il":  2024,
+                         "yurus":  6000,
+                         "seher":  "baki",
+                         "image":  {
+                                       "src":  "https://i.ytimg.com/vi/11OqcK1iWJc/maxresdefault.jpg",
+                                       "alt":  "Lexus RX"
+                                   },
+                         "title":  "Lexus RX 350h",
+                         "priceText":  "86 000 AZN",
+                         "details":  "2024 • Hibrid • 6 000 km",
+                         "posted":  {
+                                        "city":  "Bakı",
+                                        "time":  "2 gün öncə"
+                                    }
+                     },
+                     {
+                         "marka":  "range rover",
+                         "model":  "Vogue",
+                         "qiymet":  145000,
+                         "motor":  "3.0",
+                         "il":  2022,
+                         "yurus":  28000,
+                         "seher":  "baki",
+                         "image":  {
+                                       "src":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcuDzNfqyok7XWRzZVASFpcTWwK5F_cuaR_w\u0026s",
+                                       "alt":  "Range Rover Vogue"
+                                   },
+                         "title":  "Range Rover Vogue",
+                         "priceText":  "145 000 AZN",
+                         "details":  "2022 • 3.0L • 28 000 km",
+                         "posted":  {
+                                        "city":  "Bakı",
+                                        "time":  "4 gün öncə"
+                                    }
+                     },
+                     {
+                         "marka":  "porsche",
+                         "model":  "Cayenne",
+                         "qiymet":  129500,
+                         "motor":  "3.0",
+                         "il":  2021,
+                         "yurus":  32000,
+                         "seher":  "gence",
+                         "image":  {
+                                       "src":  "https://vehicle-images.dealerinspire.com/ac38-110010397/thumbnails/large/WP1AA2AY0TDA00030/32408670d1acd2b15d0e1e38a143e1fd.jpg",
+                                       "alt":  "Porsche Cayenne"
+                                   },
+                         "title":  "Porsche Cayenne",
+                         "priceText":  "129 500 AZN",
+                         "details":  "2021 • 3.0L • 32 000 km",
+                         "posted":  {
+                                        "city":  "Gəncə",
+                                        "time":  "1 həftə öncə"
+                                    }
+                     },
+                     {
+                         "marka":  "toyota",
+                         "model":  "Camry",
+                         "qiymet":  42300,
+                         "motor":  "2.5",
+                         "il":  2020,
+                         "yurus":  41000,
+                         "seher":  "baki",
+                         "image":  {
+                                       "src":  "https://turbo.azstatic.com/uploads/f460x343/2026%2F01%2F06%2F18%2F25%2F59%2Fe87a82e2-98dc-4a07-8fbd-b164dcb39398%2F22523_fYEQv_5QyotF8BbSTbg29Q.jpg",
+                                       "alt":  "Toyota Camry"
+                                   },
+                         "title":  "Toyota Camry",
+                         "priceText":  "42 300 AZN",
+                         "details":  "2020 • 2.5L • 41 000 km",
+                         "posted":  {
+                                        "city":  "Bakı",
+                                        "time":  "Dünən"
+                                    }
+                     },
+                     {
+                         "marka":  "kia",
+                         "model":  "Sportage",
+                         "qiymet":  36800,
+                         "motor":  "2.0",
+                         "il":  2019,
+                         "yurus":  52000,
+                         "seher":  "sumqayit",
+                         "image":  {
+                                       "src":  "https://aznur.az/wp-content/uploads/CarRentalGallery/Sportage.jpg",
+                                       "alt":  "Kia Sportage"
+                                   },
+                         "title":  "Kia Sportage",
+                         "priceText":  "36 800 AZN",
+                         "details":  "2019 • 2.0L • 52 000 km",
+                         "posted":  {
+                                        "city":  "Sumqayıt",
+                                        "time":  "3 gün öncə"
+                                    }
+                     },
+                     {
+                         "marka":  "volvo",
+                         "model":  "S90",
+                         "qiymet":  74600,
+                         "motor":  "2.0",
+                         "il":  2022,
+                         "yurus":  19000,
+                         "seher":  "baki",
+                         "image":  {
+                                       "src":  "https://www.volvocars.com/images/v/-/media/project/contentplatform/data/media/my24/car-images/s90-recharge-my24-702-exterior-702-light.jpg?h=600\u0026iar=0",
+                                       "alt":  "Volvo S90"
+                                   },
+                         "title":  "Volvo S90",
+                         "priceText":  "74 600 AZN",
+                         "details":  "2022 • 2.0L • 19 000 km",
+                         "posted":  {
+                                        "city":  "Bakı",
+                                        "time":  "Bugün"
+                                    }
+                     },
+                     {
+                         "marka":  "jaguar",
+                         "model":  "F-Pace",
+                         "qiymet":  88200,
+                         "motor":  "2.0",
+                         "il":  2021,
+                         "yurus":  27500,
+                         "seher":  "baki",
+                         "image":  {
+                                       "src":  "https://media.cdn-jaguarlandrover.com/api/v2/images/92037/w/1000.jpg",
+                                       "alt":  "Jaguar F-Pace"
+                                   },
+                         "title":  "Jaguar F-Pace",
+                         "priceText":  "88 200 AZN",
+                         "details":  "2021 • 2.0L • 27 500 km",
+                         "posted":  {
+                                        "city":  "Bakı",
+                                        "time":  "2 gün öncə"
+                                    }
+                     },
+                     {
+                         "marka":  "byd",
+                         "model":  "Seal",
+                         "qiymet":  58900,
+                         "motor":  "elektrik",
+                         "il":  2025,
+                         "yurus":  0,
+                         "seher":  "baki",
+                         "image":  {
+                                       "src":  "https://bydmotorsbaku.az/storage/2025/06/BYD-Seal-07-DM-i-8.webp",
+                                       "alt":  "BYD Seal"
+                                   },
+                         "title":  "BYD Seal",
+                         "priceText":  "58 900 AZN",
+                         "details":  "2025 • Elektrik • 0 km",
+                         "posted":  {
+                                        "city":  "Bakı",
+                                        "time":  "Bugün"
+                                    }
+                     },
+                     {
+                         "marka":  "ford",
+                         "model":  "Focus",
+                         "qiymet":  24700,
+                         "motor":  "1.6",
+                         "il":  2018,
+                         "yurus":  73000,
+                         "seher":  "mingecevir",
+                         "image":  {
+                                       "src":  "https://www.ford.co.uk/content/dam/guxeu/rhd/central/cars/2021-focus/dse/column-cards/ford-focus-eu-Column_Card_Focus-ST-Line-X-3x2-1000x667-front-view.jpg",
+                                       "alt":  "Ford Focus"
+                                   },
+                         "title":  "Ford Focus",
+                         "priceText":  "24 700 AZN",
+                         "details":  "2018 • 1.6L • 73 000 km",
+                         "posted":  {
+                                        "city":  "Mingəçevir",
+                                        "time":  "5 gün öncə"
+                                    }
+                     },
+                     {
+                         "marka":  "bentley",
+                         "model":  "Bentayga",
+                         "qiymet":  265000,
+                         "motor":  "4.0",
+                         "il":  2021,
+                         "yurus":  14000,
+                         "seher":  "baki",
+                         "image":  {
+                                       "src":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7ruYNd0ltb-nyU8Lv3dICGP-oOBMbj6Xisg\u0026s",
+                                       "alt":  "Bentley Bentayga"
+                                   },
+                         "title":  "Bentley Bentayga",
+                         "priceText":  "265 000 AZN",
+                         "details":  "2021 • 4.0L • 14 000 km",
+                         "posted":  {
+                                        "city":  "Bakı",
+                                        "time":  "1 gün öncə"
+                                    }
+                     },
+                     {
+                         "marka":  "chevrolet",
+                         "model":  "Malibu",
+                         "qiymet":  33900,
+                         "motor":  "1.5",
+                         "il":  2020,
+                         "yurus":  46000,
+                         "seher":  "gence",
+                         "image":  {
+                                       "src":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-q4Jiu0ebkPgaYippVO6NZRgsVqbBMcXRHQ\u0026s",
+                                       "alt":  "Chevrolet Malibu"
+                                   },
+                         "title":  "Chevrolet Malibu",
+                         "priceText":  "33 900 AZN",
+                         "details":  "2020 • 1.5L • 46 000 km",
+                         "posted":  {
+                                        "city":  "Gəncə",
+                                        "time":  "Dünən"
+                                    }
+                     },
+                     {
+                         "marka":  "honda",
+                         "model":  "Civic",
+                         "qiymet":  31500,
+                         "motor":  "1.8",
+                         "il":  2019,
+                         "yurus":  58000,
+                         "seher":  "baki",
+                         "image":  {
+                                       "src":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpZbLxxkfSiN8_i6JGI_9ijzooP2A6KDyZGA\u0026s",
+                                       "alt":  "Honda Civic"
+                                   },
+                         "title":  "Honda Civic",
+                         "priceText":  "31 500 AZN",
+                         "details":  "2019 • 1.8L • 58 000 km",
+                         "posted":  {
+                                        "city":  "Bakı",
+                                        "time":  "3 gün öncə"
+                                    }
+                     },
+                     {
+                         "marka":  "nissan",
+                         "model":  "X-Trail",
+                         "qiymet":  37400,
+                         "motor":  "2.5",
+                         "il":  2020,
+                         "yurus":  39000,
+                         "seher":  "seki",
+                         "image":  {
+                                       "src":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrHRXeWKeInF1bAh8T4uZVviCOvcvFEIAcAA\u0026s",
+                                       "alt":  "Nissan X-Trail"
+                                   },
+                         "title":  "Nissan X-Trail",
+                         "priceText":  "37 400 AZN",
+                         "details":  "2020 • 2.5L • 39 000 km",
+                         "posted":  {
+                                        "city":  "Şəki",
+                                        "time":  "4 gün öncə"
+                                    }
+                     },
+                     {
+                         "marka":  "skoda",
+                         "model":  "Octavia",
+                         "qiymet":  45200,
+                         "motor":  "1.4",
+                         "il":  2025,
+                         "yurus":  0,
+                         "seher":  "baki",
+                         "image":  {
+                                       "src":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPjrkq0Ug1VxivtF6bh4Yqaimq7o05NCIlAA\u0026s",
+                                       "alt":  "Skoda Octavia"
+                                   },
+                         "title":  "Skoda Octavia",
+                         "priceText":  "45 200 AZN",
+                         "details":  "2025 • 1.4L • 0 km",
+                         "posted":  {
+                                        "city":  "Bakı",
+                                        "time":  "Bugün"
+                                    }
+                     },
+                     {
+                         "marka":  "maserati",
+                         "model":  "Ghibli",
+                         "qiymet":  112000,
+                         "motor":  "3.0",
+                         "il":  2020,
+                         "yurus":  22000,
+                         "seher":  "baki",
+                         "image":  {
+                                       "src":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdGnFD-XVn5AAQAfw1AfBXgN8iinDaP6GiMQ\u0026s",
+                                       "alt":  "Maserati Ghibli"
+                                   },
+                         "title":  "Maserati Ghibli",
+                         "priceText":  "112 000 AZN",
+                         "details":  "2020 • 3.0L • 22 000 km",
+                         "posted":  {
+                                        "city":  "Bakı",
+                                        "time":  "2 gün öncə"
+                                    }
+                     },
+                     {
+                         "marka":  "subaru",
+                         "model":  "Forester",
+                         "qiymet":  41800,
+                         "motor":  "2.0",
+                         "il":  2021,
+                         "yurus":  34000,
+                         "seher":  "quba",
+                         "image":  {
+                                       "src":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbtjTy5jy1HRvl8-0YTjjJAGuvw2y-Hd5I5w\u0026s",
+                                       "alt":  "Subaru Forester"
+                                   },
+                         "title":  "Subaru Forester",
+                         "priceText":  "41 800 AZN",
+                         "details":  "2021 • 2.0L • 34 000 km",
+                         "posted":  {
+                                        "city":  "Quba",
+                                        "time":  "6 gün öncə"
+                                    }
+                     },
+                     {
+                         "marka":  "mazda",
+                         "model":  "CX-5",
+                         "qiymet":  43600,
+                         "motor":  "2.5",
+                         "il":  2022,
+                         "yurus":  18000,
+                         "seher":  "baki",
+                         "image":  {
+                                       "src":  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/2024_Mazda_CX-5_2.5_S_Select_in_Platinum_Quartz_Metallic%2C_front_right.jpg/1280px-2024_Mazda_CX-5_2.5_S_Select_in_Platinum_Quartz_Metallic%2C_front_right.jpg",
+                                       "alt":  "Mazda CX-5"
+                                   },
+                         "title":  "Mazda CX-5",
+                         "priceText":  "43 600 AZN",
+                         "details":  "2022 • 2.5L • 18 000 km",
+                         "posted":  {
+                                        "city":  "Bakı",
+                                        "time":  "Dünən"
+                                    }
+                     },
+                     {
+                         "marka":  "toyota",
+                         "model":  "Land Cruiser",
+                         "qiymet":  138500,
+                         "motor":  "3.5",
+                         "il":  2023,
+                         "yurus":  11000,
+                         "seher":  "baki",
+                         "image":  {
+                                       "src":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAElhGrIGCad0dqZ8e4WZSHBtBAfZ3CYgvxQ\u0026s",
+                                       "alt":  "Toyota Land Cruiser"
+                                   },
+                         "title":  "Toyota Land Cruiser",
+                         "priceText":  "138 500 AZN",
+                         "details":  "2023 • 3.5L • 11 000 km",
+                         "posted":  {
+                                        "city":  "Bakı",
+                                        "time":  "1 gün öncə"
+                                    }
+                     },
+                     {
+                         "marka":  "peugeot",
+                         "model":  "508",
+                         "qiymet":  34200,
+                         "motor":  "1.6",
+                         "il":  2019,
+                         "yurus":  67000,
+                         "seher":  "lenkeran",
+                         "image":  {
+                                       "src":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1LgvIOLdSBDqJR6vo_0osPJ4R-ZntMuFO3Q\u0026s",
+                                       "alt":  "Peugeot 508"
+                                   },
+                         "title":  "Peugeot 508",
+                         "priceText":  "34 200 AZN",
+                         "details":  "2019 • 1.6L • 67 000 km",
+                         "posted":  {
+                                        "city":  "Lənkəran",
+                                        "time":  "1 həftə öncə"
+                                    }
+                     }
+                 ]
+}
